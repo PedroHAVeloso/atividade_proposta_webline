@@ -77,19 +77,19 @@ class DatabaseFunctions
       $table = "
         <table>
           <tr>
-            <th>Nome</th>
-            <th>Placa</th>
-            <th>Chassi</th>
-            <th>Montadora</th>
+            <th class='table-th'>Nome</th>
+            <th class='table-th'>Placa</th>
+            <th class='table-th'>Chassi</th>
+            <th class='table-th'>Montadora</th>
           </tr>";
 
       while ($row = $query->fetch()) {
         $table .= "
         <tr>
-          <td>$row[nome]</td>
-          <td>$row[placa]</td>
-          <td>$row[chassi]</td>
-          <td>$row[montadora]</td>
+          <td class='table-td'>$row[nome]</td>
+          <td class='table-td'>$row[placa]</td>
+          <td class='table-td'>$row[chassi]</td>
+          <td class='table-td'>$row[montadora]</td>
         </tr>
         ";
       }
@@ -134,19 +134,19 @@ class DatabaseFunctions
         $table = "
         <table>
           <tr>
-            <th>Nome</th>
-            <th>Placa</th>
-            <th>Chassi</th>
-            <th>Montadora</th>
+            <th class='table-th'>Nome</th>
+            <th class='table-th'>Placa</th>
+            <th class='table-th'>Chassi</th>
+            <th class='table-th'>Montadora</th>
           </tr>";
 
         while ($row = $query->fetch()) {
           $table .= "
         <tr>
-          <td>$row[nome]</td>
-          <td>$row[placa]</td>
-          <td>$row[chassi]</td>
-          <td>$row[montadora]</td>
+          <td class='table-td'>$row[nome]</td>
+          <td class='table-td'>$row[placa]</td>
+          <td class='table-td'>$row[chassi]</td>
+          <td class='table-td'>$row[montadora]</td>
         </tr>
         ";
         }

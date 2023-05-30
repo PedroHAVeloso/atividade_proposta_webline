@@ -18,19 +18,26 @@ if (isset($_GET['automovel_nome'])) {
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+
   <title>Buscar Automóveis</title>
 </head>
 
 <body>
-  <main>
-    <form action="listar_automoveis.php" method="GET">
+  <main id="main-listar">
+    <button id="btn-voltar" onclick="location.href=`index.php`">Voltar</button>
+
+    <form id="form-pesquisar" action="listar_automoveis.php" method="GET">
       <p>Pesquisar Automóvel</p>
       <label for="automovel_nome">
-        Nome
-        <input type="text" name="automovel_nome" id="automovel_nome">
+        Nome <br />
+        <input id="nome" type="text" name="automovel_nome" id="automovel_nome">
       </label>
 
-      <input type="submit" value="Pesquisar">
+      <br />
+      <input id="btn-pesquisar" type="submit" value="Pesquisar">
     </form>
     <?= $html ?>
   </main>

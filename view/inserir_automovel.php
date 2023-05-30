@@ -9,7 +9,7 @@ $message = DatabaseFunctions::insertAutomovel();
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" id="html-index">
 
 <head>
   <meta charset="UTF-8">
@@ -18,10 +18,13 @@ $message = DatabaseFunctions::insertAutomovel();
 
   <meta http-equiv="refresh" content="3; url=index.php" />
 
+  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+
   <title>Automóvel Inserido</title>
 </head>
 
-<body>
+<body id="body-index">
   <main>
     <?= $message ?>
   </main>

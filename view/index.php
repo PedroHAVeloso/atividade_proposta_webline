@@ -9,43 +9,59 @@ $selectInput = DatabaseFunctions::selectMontadoras();
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" id="html-index">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+
   <title>Cadastro de Automóveis</title>
 </head>
 
-<body>
+<body id="body-index">
   <main>
-    <form action="inserir_automovel.php" method="POST">
+    <form id="form-inserir" action="inserir_automovel.php" method="POST">
       <label for="nome">
-        Nome*
+        Nome<strong>*</strong>
+        <br />
         <input type="text" name="nome" id="nome" placeholder="Ex: Corolla" required>
       </label>
 
+      <br />
+
       <label for="placa">
-        Placa*
+        Placa<strong>*</strong>
+        <br />
         <input type="text" name="placa" id="placa" placeholder="Ex: ABC1234" minlength="7" maxlength="7" required>
       </label>
 
+      <br />
+
       <label for="chassi">
-        Chassi*
+        Chassi<strong>*</strong>
+        <br />
         <input type="text" name="chassi" id="chassi" placeholder="Ex: 9BRBLWHEXG0107721" minlength="17" maxlength="17"
           required>
       </label>
 
+      <br />
+
       <label for="montadora">
-        Montadora*
+        Montadora<strong>*</strong>
+        <br />
         <?= $selectInput ?>
       </label>
 
-      <input type="submit" value="Cadastrar">
+      <br />
+
+      <input id="btn-cadastrar" type="submit" value="Cadastrar">
     </form>
 
-    <button onclick="location.href=`listar_automoveis.php`">Listar Automóveis</button>
+    <button id="btn-listar" onclick="location.href=`listar_automoveis.php`">Listar Automóveis</button>
   </main>
 </body>
 
