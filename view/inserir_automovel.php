@@ -16,10 +16,10 @@ $message = DatabaseFunctions::insertAutomovel();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta http-equiv="refresh" content="3; url=index.php" />
+  <meta http-equiv="refresh" content="3; url=home" />
 
-  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="/atividade_proposta_webline/assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/atividade_proposta_webline/css/style.css">
 
   <title>Automóvel Inserido</title>
 </head>

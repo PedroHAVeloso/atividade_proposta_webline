@@ -16,15 +16,15 @@ $selectInput = DatabaseFunctions::selectMontadoras();
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="/atividade_proposta_webline/assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="/atividade_proposta_webline/css/style.css">
 
   <title>Cadastro de Automóveis</title>
 </head>
 
 <body id="body-index">
   <main>
-    <form id="form-inserir" action="inserir_automovel.php" method="POST">
+    <form id="form-inserir" action="inserir" method="POST">
       <label for="nome">
         Nome<strong>*</strong>
         <br />
@@ -61,7 +61,7 @@ $selectInput = DatabaseFunctions::selectMontadoras();
       <input id="btn-cadastrar" type="submit" value="Cadastrar">
     </form>
 
-    <button id="btn-listar" onclick="location.href=`listar_automoveis.php`">Listar Automóveis</button>
+    <button id="btn-listar" onclick="location.href=`listar`">Listar Automóveis</button>
   </main>
 </body>
 

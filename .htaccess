@@ -1,0 +1,19 @@
+Options +FollowSymlinks
+
+Options -Indexes
+
+<FilesMatch "\.env$">
+  Deny from all
+</FilesMatch>
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule (./) /atividade_proposta_webline/view/index.php
+RewriteRule ^/?$ /atividade_proposta_webline/view/index.php
+
+RewriteRule ^(inserir)$ /atividade_proposta_webline/view/inserir_automovel.php
+RewriteRule ^(home)$ /atividade_proposta_webline/view/index.php
+RewriteRule ^(listar)$ /atividade_proposta_webline/view/listar_automoveis.php
